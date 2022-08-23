@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Partidas de Futebol</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="title">
+  </div>
+
+  <div class="form">
+    <form action="/store" method="POST">
+      <input name="casa" type="text" placeholder="Time da Casa">
+      &#160;&#160;
+      <input name="gol1" type="number" placeholder="Gols Casa">
+      &#160;
+      <h5> X </h5>
+      &#160;
+      <input name="visitante" type="text" placeholder="Time Visitante">
+      &#160;&#160;
+      <input name="gol2" type="number" placeholder="Gols Visitante">
+      &#160;
+      &#160;
+
+      <button type="submit"> Adicionar </button>
+    </form>
+  </div>
+
+  <div class="lis">
+    <ul>
+      {% for lis in todos %}
+          <li>
+            {{lis.title}}
+            {{lis.gol1}}
+                ✖
+            {{lis.gol2}}
+            {{lis.title2}}
+          </li>
+      {% endfor %}      
+    </ul>
+
+  </div>    
+</body>
+</html>

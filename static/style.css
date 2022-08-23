@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  color: white;
+  height: 50vh;
+  background-image: url(fundo.png);
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 50vh;
+  height: 6vh;
+}
+
+button {
+  width: 20vh;
+  height: 6.5vh;
+}
+
+li {
+  color: #ECF0F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  width: 40vh;
+  margin: 3vh;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #2980B9, #3498DB);
+  font-family: serif;
+  font-size: 20px;
+}
+
+form {
+  display:flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5vh;
+}
